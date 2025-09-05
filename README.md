@@ -30,7 +30,7 @@ pip install git+https://github.com/facebookresearch/segment-anything.git
 
 or clone the repository locally and install with
 
-``bash
+```bash
 git clone git@github.com:facebookresearch/segment-anything.git
 cd segment-anything; pip install -e .
 ```
