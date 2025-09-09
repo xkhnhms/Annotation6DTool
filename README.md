@@ -2,6 +2,36 @@
 
 This is a high-performance Annotation 6D API built with python.
 
+## DataSets DIR
+
+```
+├── grasp_label
+│   ├── 000_labels.npz
+│   ├── 001_labels.npz
+├── models
+│   ├── 000
+│   │   ├── nontextured.ply
+│   └── 001
+│       ├── nontextured.ply
+└── scenes
+    ├── scene_0000
+    │   ├── mecheye                             # data of mecheye camera
+    │   │   ├── cam0_wrt_table.npy
+    │   │   ├── depth
+    │   │   │   ├── 0000.png to 0255.png        # 256 depth images
+    │   │   ├── params.json                     # camera intrinsic,external parameters
+    │   │   ├── rgb
+    │   │   │   ├── 0000.png to 0255.png        # 256 rgb images
+    │   │   └── robot
+    │   │       ├── 0000.txt to 0255.txt        # 256 robot poses ,split by '_' 
+    │   ├── me_wrt_ob.npz                       # mecheye camera pose with respect to orbbec, shape: 256x(4x4)
+    │   ├── object_id_list.txt                  # objects' id that appear in this scene, 0-indexed
+    │   └── orbbec                              # data of orbbec camera
+    │       ├── same structure as mecheye
+    └── ... scene_000n
+
+```
+
 ## 1 Features
 
 - cameras
