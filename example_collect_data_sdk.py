@@ -20,7 +20,7 @@ if __name__ == "__main__":
 
         interval_time = 2,
 
-        root_dir = '/home/ls/Videos/data',     
+        root_dir = '/data',     
         scene_id = 0,
         saved_idx = 0,
         check_conf_idx = 0,  
