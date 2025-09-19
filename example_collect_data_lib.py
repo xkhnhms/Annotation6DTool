@@ -13,7 +13,7 @@ if __name__ == "__main__":
     tool = CameraControlToolLib(
         camera_list=['mecheye','orbbec'],
         mech_ip="",
-        orbbec_lib_path= '/home/ls/fs/codes/object-grasp-annotation/camera/OrbbecSDK/lib_arm/',
+        orbbec_lib_path= lib_arm/',
         
         orb_ip="",
         start_visualization=True,
