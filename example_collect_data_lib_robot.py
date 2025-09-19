@@ -18,7 +18,7 @@ if __name__ == "__main__":
     tool = CameraControlToolLib(
         camera_list=['mecheye','orbbec'],
         mech_ip="",
-        orbbec_lib_path= '/home/ls/fs/codes/object-grasp-annotation/camera/OrbbecSDK/lib_arm/',
+        orbbec_lib_path= lib_arm/',
         
         orb_ip="",
         start_visualization=True,
@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
         interval_time = 2,  # seconds
 
-        root_dir = '/home/ls/Videos/data',     
+        root_dir = '/data',     
         scene_id = 0,
         saved_idx = 0,
         check_conf_idx = 0,  
