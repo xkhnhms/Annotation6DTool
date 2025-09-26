@@ -1,4 +1,4 @@
-from Annotation6DAPI.cameras.capture_orbbecNet_image import ImageCapture
+from Annotation6DAPI.cameras.capture_orbbecSDK_image_robot import ImageCaptureSDKRobot
 
 if __name__ == '__main__':
 
@@ -7,5 +7,5 @@ if __name__ == '__main__':
     robot_ip = "169.254.4.70"
     root_dir = 'imgs'
     
-    capture = ImageCapture(camera_ip, robot_ip, root_dir,orbbec_lib_path)
+    capture = ImageCaptureSDKRobot(camera_ip, robot_ip, root_dir,orbbec_lib_path)
     capture.run()
